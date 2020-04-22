@@ -27,7 +27,7 @@ public class yahoo_finance_web_scraper {
 		System.out.println("Getting the stock price for "+name+"...");
 
 		//Calling the getPrice function to get price from Yahoo Finance
-		System.out.println("The current price of "+name+" is: "+getPriceData(name)+" USD");
+		System.out.println("The current price of "+name+" is: "+getPrice(name)+" USD");
 
 		//Downloading stock data
 		System.out.println("Please type 'Yes' if you would like to donwload the data.");
@@ -40,7 +40,7 @@ public class yahoo_finance_web_scraper {
 
 
 	//Creating a method which takes the name of the security and returns the current price
-	public static float getPriceData(String name) {
+	public static float getPrice(String name) {
 		//Creating a WebDriver ChromeDriver object
 		WebDriver driver = new ChromeDriver();
 		//opening Yahoo Finance
